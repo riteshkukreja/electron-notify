@@ -1,0 +1,16 @@
+{
+  "name": "eNotify",
+  "version": "1.0.0",
+  "description": "Notification service for electron applications",
+  "main": "index.js",
+  "scripts": {
+    "make": "electron app/index.js",
+    "clean": "rm -rf node_modules",
+    "build": "electron-packager . --out ./dist --overwrite"
+  },
+  "author": "Ritesh",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^1.6.11"
+  }
+}

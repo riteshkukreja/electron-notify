@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script>
+		var {ipcRenderer, remote} = require('electron');
+		const eNotify = require("../../notify");
+		
+		var showNotification = function(title, config) {
+			config.title = title;
+			let en = eNotify.notify(config);
+		};
+
+		ipcRenderer.on("notify", (event, args) => {
+			showNotification(args.title, args.config);
+		});
+
+		window.onload = () => {
+			ipcRenderer.send("loaded");
+		};
+	</script>
+
+</body>
+</html>
