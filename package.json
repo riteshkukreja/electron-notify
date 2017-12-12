@@ -1,16 +1,28 @@
 {
-  "name": "eNotify",
+  "name": "electron-notify",
   "version": "1.0.0",
   "description": "Notification service for electron applications",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
-    "make": "electron app/index.js",
-    "clean": "rm -rf node_modules",
-    "build": "electron-packager . --out ./dist --overwrite"
+    "make": "electron app/index.js"
   },
-  "author": "Ritesh",
+  "author": "Ritesh Kukreja <ritesh101094@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "electron": "^1.6.11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riteshkukreja/electron-notify.git"
+  },
+  "keywords": [
+    "electron",
+    "notification",
+    "custom",
+    "notifications"
+  ],
+  "bugs": {
+    "url": "https://github.com/riteshkukreja/electron-notify/issues"
+  },
+  "homepage": "https://github.com/riteshkukreja/electron-notify#readme"
 }
