@@ -4,7 +4,7 @@ Notification library for electron application. It allows showing desktop applica
 ## Using module
 ### Import the module
 ```js
-const electronNotify = require('electron-notify');
+const electronNotify = require('electron-notify-service');
 ```
 
 ### Simple notification example

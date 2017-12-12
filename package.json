@@ -1,8 +1,8 @@
 {
-  "name": "electron-notify",
+  "name": "electron-notify-service",
   "version": "1.0.0",
   "description": "Notification service for electron applications",
-  "main": "app/index.js",
+  "main": "electron-notify.js",
   "scripts": {
     "make": "electron app/index.js"
   },
